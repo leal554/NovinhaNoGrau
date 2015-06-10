@@ -8,7 +8,14 @@ namespace NovinhaNoGrau.NoFluxo.API.Models
 	/// <summary>
 	/// 
 	/// </summary>
-	public class Titulo
+	public abstract class Titulo
 	{
+		public int Id { get; set; }
+		public string NomeTitulo { get; set; }
+		public string Descricao { get; set; }
+		public int GeneroId { get; set; }
+		public Genero Genero { get; set; }
+		public int AutorId { get; set; }
+		public Autor Autor { get; set; }
 	}
 }

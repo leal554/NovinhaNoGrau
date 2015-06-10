@@ -11,5 +11,6 @@ namespace NovinhaNoGrau.NoFluxo.API.Models
 		public string nome { get; set; }
 		public int GeneroID { get; set; }
 		public Genero GeneroPai { get; set; }
+		public List<Titulo> Titulos { get; set; }
 	}
 }
